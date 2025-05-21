@@ -17,12 +17,11 @@ def lanzar_interfaz():
         main.registrar_receta(nombre)
         entry_nombre.delete(0, tk.END)
 
-    tk.Button(ventana, text="Registrar Receta", command=registrar).pack(pady=5)
+    tk.Button(ventana, text="Registrar Receta", command=registrar).pack(pady=5)    #El pady sirve para dejar espacio entre los botones
     tk.Button(ventana, text="Ver receta por número", command=main.ver_receta_por_numero).pack(pady=5)
     tk.Button(ventana, text="Eliminar receta", command=main.eliminar_receta).pack(pady=5)
     tk.Button(ventana, text="Mostrar todas", command=main.mostrar_todas).pack(pady=5)
 
     ventana.mainloop()
 
-if __name__ == "__main__":
-    lanzar_interfaz()
+
