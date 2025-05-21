@@ -29,5 +29,5 @@ Este es un proyecto hecho en pareja que permite registrar y gestionar recetas de
 
 
 # integrantes
-andres espitia
-kevin ospina
+-andres espitia
+-kevin ospina
