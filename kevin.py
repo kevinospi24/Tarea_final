@@ -15,12 +15,8 @@ def registrar_receta(nombre):
         return
     tiempo = random.randint(15, 90)
     resultado = round(tiempo * 1.8 + 32, 2)
-    fila = {
-        'etiqueta': nombre,
-        'parametro': 'minutos',
-        'valor_base': tiempo,
-        'resultado': resultado
-    }
+    fila = {'etiqueta': nombre,'parametro': 'minutos','valor_base': tiempo,'resultado': resultado}
+    
     existe = os.path.isfile(archivo_csv)
     with open(archivo_csv, 'a', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=campos)
